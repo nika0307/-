@@ -1,0 +1,62 @@
+class TownCar:
+    def__init__(self, speed, colour, name, is_polise):
+        self.speed = speed
+        self.colour = colour
+        self.name = name
+        self.is_polise = is_polise
+        self.diraction = diraction
+
+    def go(self):
+        return "car's started"
+
+    def stop(self):
+        return "Car's stopped"
+
+    def turn(self,direction):
+        direction = "left"
+        return f"Car turned to the {direction}"
+
+class SportCar:
+    def__init__(self, speed, colour, name, is_polise):
+        TownCar.__init__(self, speed, colour, name, is_polise)
+    
+    def go(self):
+        return "Car's started"
+
+    def stop(self):
+        return "Car's stopped"
+
+    def turn(self, direction):
+        direction = "left"
+        return f"Car turned to the {direction}"
+
+class WorkCar:
+    def__init__(self, speed, colour, name, is_polise):
+        TownCar.__init__(self, speed, colour, name, is_police)
+
+    def go(self):
+        return "Car's started"
+
+    def stop(self):
+        return "stopped"
+
+    def turn(self, direction):
+        direction = "left"
+        return f"Car turned to the {direction}"
+
+class PoliceCar:
+    def__init__(self, speed, colour, name, is_polise):
+        TownCar.__init__(self, speed, colour, name, is_police)
+
+    def go(self):
+        return "Car's started"
+
+    def stop(self):
+        return "stopped"
+
+    def turn(self, direction):
+        direction = "left"
+        return f"Car turned to the {direction}"
+
+car1 = TownCar("322", "blue", "BMW", True)
+print(car1.go(), car1.stop(), car1.turn(direction))
