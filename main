@@ -1,0 +1,29 @@
+class Factory:
+
+    def __init__(self, name, colour, toytype ):
+        self.name = name
+        self.colour = colour
+        self.toytype = toytype
+
+    def material(self):
+        print("Buying materials")
+
+    def sew(self):
+        print("Sewing a toy")
+
+    def die(self):
+        print("Dying a toy")
+
+class Toys:
+    Factory.__init__(self, name, colour, toytype)
+    def newtoy(self):
+        return f"{name}, {colour}, {toytype}"
+
+
+new_toy = Toys("Babyborn", "colorful", "Dolls")
+
+new_toy.material()
+new_toy.sew()
+new_toy.dye()
+print(new_toy,newtoy)
+
